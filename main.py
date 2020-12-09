@@ -25,9 +25,9 @@ def take_command():
             command = command.lower()
             if 'ri' in command:
                 command = command.replace('ri', '')
+        return command
     except:
         print("Error using Microphone, Please check..")
-    return command
 
 
 def run_Ri():
@@ -55,7 +55,7 @@ def run_Ri():
     elif 'joke' in command:
         talk(pyjokes.get_joke())
     else:
-        talk('I dont understand!')
+        talk('I dont understand, please repeat it again')
 
 
 while True:
