@@ -1,1 +1,1 @@
-# Ri_Assistant
+# Ri the Assistant
