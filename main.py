@@ -36,11 +36,11 @@ def take_command():
         print("Recognizing...")
         command = listener.recognize_google(voice, language='en-in')
         command = command.lower()
-        if 'piku' in command:
-            command = command.replace('piku','')
+        if 'pikuu' in command:
+            command = command.replace('Pikuu','')
         print(command)
     except Exception as e:
-        print("Please say again..")
+        print("Please say again.. with prefix Pikuu")
         return "None"
     return command
 
